@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+
+int main()
+{
+     
+  int nombre, temp;  
+  int temp=0;
+  for(int i=0;i<10;i++){
+  printf(" Entrez un nombre entier quelconque : ");
+  scanf("%d", &nombre);  
+  if(nombre>temp){
+      temp=nombre;
+  }
+  }
+  printf("Le plus grand nombre entier est: %d ",temp);
+    return 0;
+}

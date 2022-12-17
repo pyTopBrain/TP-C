@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int x=1;
+    int y=2;
+    int total;
+    while (x<=5)
+    {
+        total+=x*x;
+        printf("%d",x*x);
+        ++x;
+    }
+    printf("Le total est %d ",total);
+    
+
+}
