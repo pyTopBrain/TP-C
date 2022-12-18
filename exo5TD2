@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+    int nbr,char1,char2,char3,char4,char5,rest1,rest2,rest3;
+    printf("Donner un nombre composé de 5 chiffres");
+    scanf("%d",&nbr);
+
+
+    char1=nbr/10000;
+    rest1=nbr%10000;
+    char2=rest1/1000;
+    rest2=rest1%1000;
+    char3=rest2/100;
+    rest3=rest2%100;
+    char4=rest3/10;
+    char5=rest3%10;
+    printf("%d,%d,%d,%d,%d",char1,char2,char3,char4,char5);
+
+
+}
