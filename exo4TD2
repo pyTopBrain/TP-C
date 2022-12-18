@@ -1,24 +1,6 @@
 
 #include <stdio.h>
 
-int main()
-{
-    int a,b,c,sum,moy,min,max;
-    printf("Entrer un nombre entier ");
-    scanf("%d",&a);
-    printf("Entrer un 2e nombre entier ");
-    scanf("%d",&b);
-    printf("Entrer un 2e nombre entier ");
-    scanf("%d",&c);
-    sum=a+b+c;
-    moy=sum/3;
-    printf("La somme vaut %d et la moyenne vaut %d /n ",sum,moy);
-    min= minimum(c,minimum(a,b));
-    max=maximum(c,minimum(a,b));
-    printf("Le minimum vaut %d et le maximum vaut %d /n ",min,max);
-    return 0;
-}
-
 
 int maximum(int num1, int num2)
 {
@@ -30,4 +12,23 @@ int minimum(int num1, int num2)
 {
     return (num1 > num2 ) ? num2 : num1;
 }
+
+int main()
+{
+    int a,b,c,sum,moy,min,max;
+    printf("Entrer un nombre entier ");
+    scanf("%d",&a);
+    printf("Entrer un 2e nombre entier ");
+    scanf("%d",&b);
+    printf("Entrer un 2e nombre entier ");
+    scanf("%d",&c);
+    sum=a+b+c;
+    moy=sum/3;
+    printf("La somme vaut %d et la moyenne vaut %d  ",sum,moy);
+    min= minimum(c,minimum(a,b));
+    max=maximum(c,minimum(a,b));
+    printf("Le minimum vaut %d et le maximum vaut %d  ",min,max);
+    return 0;
+}
+
  
